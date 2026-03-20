@@ -18,8 +18,17 @@ Una pantalla de aplicación móvil sencilla con una estética morado pastel. Bar
 
 ## Mi Prompt a IA (Negocio):
 
-Una pantalla de pago (checkout) premium de aplicación móvil para 'MySelfCar'. El fondo es blanco limpio. Primera fila (Encabezado): A la izquierda, un icono de auto y el texto 'MySelfCar' en color negro y negrita; en el extremo derecho, un icono de menú hamburguesa. Segunda fila: Un icono de flecha de retroceso <- a la izquierda, y el texto 'PAGO Y ENTREGA' perfectamente centrado en color Morado Oscuro (#4A148C) y negrita. Tercera fila: Un espacio cuadrado para una imagen centrado horizontalmente, que ocupa exactamente 1/3 del ancho de la pantalla, destacando con una sombra de resplandor Neón Magenta (#E040FB). Cuarta fila: Un botón rectangular centrado debajo de la imagen, con un ancho ligeramente más pequeño que la imagen, con un fondo Lila (#DCD0FF) y el texto 'Elegir Ubicación'. Añade un espacio vertical considerable. Quinta fila: Un contenedor de entrada de datos (input) personalizado dividido en dos partes: una pequeña caja cuadrada a la izquierda con fondo morado claro y un icono de tarjeta de crédito, y un área de texto a la derecha sin texto auxiliar (placeholder). Sexta fila: Dos columnas separadas por un pequeño espacio. La columna izquierda es un contenedor de input (caja con icono de calendario a la izquierda, área de texto a la derecha). La columna derecha es un contenedor de input idéntico (caja con icono de candado a la izquierda, área de texto a la derecha). Séptima fila: Un contenedor de input idéntico al de la quinta fila, pero con un icono de usuario/persona. Última fila: Un botón color verde brillante y vibrante (#00E676) alineado al extremo derecho, que contiene el texto 'Siguiente' y una flecha a la derecha ->. Mantén una altura uniforme para todos los campos de texto y botones
 
-<img width="528" height="771" alt="image" src="https://github.com/user-attachments/assets/49486d23-2006-4f76-9808-272baff9d3a5" />
-<img width="398" height="686" alt="image" src="https://github.com/user-attachments/assets/879113e1-d4d1-41cb-a267-692df511bb91" />
+Actúa como un desarrollador experto en Flutter. Necesito recrear la interfaz principal (PantallaInicio) basándome en un boceto *wireframe*. 
+
+Genera el código para el `body` del `Scaffold` utilizando un `SingleChildScrollView`. Dentro de este, la estructura debe ser una `Column` principal que contenga lo siguiente en orden vertical:
+
+1. Un `Container` superior simulando una barra de búsqueda, con borde negro y un texto alineado a la izquierda.
+2. Un widget `Row` (Fila 1) que contenga dos widgets `Expanded`. Dentro de cada `Expanded`, diseña una tarjeta usando un `Container` con un borde de color `Colors.deepPurple` de ancho 2. 
+3. El contenido interno de cada tarjeta debe ser una `Column` que agrupe: un `Image.network` centrado en la parte superior, seguido de tres widgets `Row` pequeños debajo. Cada uno de estos `Row` pequeños debe contener un icono simulando una viñeta y un widget `Text`.
+4. Debajo de la primera gran `Row`, coloca un widget `Center` que contenga un botón de texto con la palabra "Mas...". El botón debe estar envuelto en un `Container` con borde perimetral color `Colors.deepPurple`.
+5. Un segundo widget `Row` (Fila 2) con exactamente la misma estructura interna que la Fila 1 (dos tarjetas envueltas en `Expanded` con diseño en `Column`), pero destinadas a mostrar imágenes de refacciones.
+6. Asegúrate de usar `SizedBox` para mantener un espaciado uniforme entre las filas, las columnas internas y el botón.
+<img width="509" height="711" alt="image" src="https://github.com/user-attachments/assets/7163e756-037f-4dc0-be13-8ebb5288be83" />
+<img width="377" height="549" alt="image" src="https://github.com/user-attachments/assets/f1bb5d29-246f-4bc7-a10a-910888a3ed2f" />
 
